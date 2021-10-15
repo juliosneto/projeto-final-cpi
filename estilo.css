@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+*{padding: 0; margin: 0;}
+
+body {
+    transition: .5s;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+}
+  
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    font-family: 'Fahkwang';
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #BBC2CC;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #F1F1F1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#socialmedia {
+    margin-top: 400px;
+}
+
+.logo {
+    width: 30px;
+}
+
+#menu {
+    padding: 16px;
+    transition: margin-left .5s;
+    font-family: 'Fahkwang';
+    background-color: #171717;
+    color: #BBC2CC;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+article, .anel {
+    background-color: #171717;
+}
+
+.sn, #display-ping, #display-anel, #display-puls{
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFDD77;
+    font-family: 'Josefin Sans';
+    padding: 20px;
+    margin-left: 105px;
+    padding-top: 30px;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+#texto-sn {
+    margin-left: 200px;
+    margin-right: 270px;
+}
+
+#article-img {
+    width: 500px;
+    margin-right: 200px;
+    margin-bottom: 65px;
+}
+
+#texto-sn, #texto-ping, #texto-anel, #texto-puls {
+    font-family: 'Roboto Light';
+    color: #BBC2CC;
+    width: 420px;
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 200px;
+    margin-right: 270px;
+}
+
+.main-img-right {
+    width: 300px;
+    margin-bottom: 65px;
+    margin-left: 270px;
+}
+
+.main-img-left {
+    width: 300px;
+    margin-bottom: 65px;
+    margin-right: 270px;
+}
+
+.ping, .puls {
+    background-color: #2D2D2D;
+}
+
+footer {
+    font-family: 'Roboto Regular';
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.p-footer {
+    font-size: 1rem;
+}
+
+

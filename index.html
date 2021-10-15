@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>PageOne Joalheria</title>
+        <meta charset="UTF-8">
+        <meta name="authors" content="Júlio Neto, Pedro Paulo">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        </head>
+    <body>
+    <header>
+        <img src="img/banner.png" class="banner">
+    </header>    
+    <div class="nav">
+        <div id="mySidenav" class="sidenav">
+            <div id="sitebts">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">HOME</a>
+                <a href="#sobre">SOBRE NÓS</a>
+                <a href="#produtos">PRODUTOS</a>
+                <a href="https://mail.google.com/">CONTATO</a>`
+            </div>
+            <div id="socialmedia">
+                <a href="https://www.facebook.com/" target="blank"><img src="img/facebook.png" class="logo"></a>
+                <a href="https://twitter.com/" target="blank"><img src="img/twitter.png" class="logo"></a>
+                <a href="https://www.instagram.com/" target="blank"><img src="img/instagram.png" class="logo"></a>
+            </div>
+        </div>
+        <div id="menu">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> 
+        </div>
+        <script>
+            
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("menu").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("menu").style.marginLeft= "0";
+                document.body.style.backgroundColor = "";
+            }
+
+        </script>
+    </div>
+    <article id="sobre">
+        <h1>SOBRE NÓS</h1>
+        <div class="sn">
+            <div id="texto-sn">
+                <p>Nossas jóias baseiam-se em um legado de mais de 200 anos de artesanato e habilidades especializados com colares e pingentes muito bem desenhados, pulseiras, anéis e muito mais.</p>
+            </div>
+            <div id="imagem-sn">
+                <img src="img/diamante.jpg" alt="diamante" id="article-img">
+            </div>
+        </div>
+    </article>
+    <main id="produtos">
+        <div class="ping">
+            <h1>PINGENTES</h1>
+            <div id="display-ping">
+                <div id="imagem-ping">
+                    <img src="img/pingente.jpg" alt="pingente" class="main-img-right">
+                </div>
+                <div id="texto-ping">
+                    <p>Conte sua história, sua religião, um objetivo de vida,
+                        ou mesmo seu apelido de infância. Os pingentes têm 
+                        significados e possibilidades ilimitados.</p>
+                </div>
+            </div>
+        </div>
+        <div class="anel">
+            <h1>ANÉIS</h1>
+            <div id="display-anel">
+                <div id="texto-anel">
+                    <p>Alianças elegantes, anéis Cocktail ousados e anéis essenciais para combinar.
+                        Faça uma declaração de atitude com nossos anéis femininos
+                        e masculinos elaborados com perfeição.</p>
+                </div>
+                <div id="imagem-anel">
+                    <img src="img/anel.jpg" alt="anel" class="main-img-left">
+                </div>
+            </div>
+        </div>
+        <div class="puls">
+            <h1>PULSEIRAS</h1>
+            <div id="display-puls">
+                <div id="imagem-puls">
+                    <img src="img/pulseira.jpg" alt="pulseira" class="main-img-right">
+                </div>
+                <div id="texto-puls">
+                    <p>Nossa coleção de pulseiras em prata de lei, ouroamarelo,branco e rosa 18k tem belos detalhes e diamantesbrilhantes,características essenciais para transformar qualquer visual
+                        do dia para a noite.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="p-footer">Desenvolvido por Júlio Neto e Pedro Paulo - 2021</p> 
+    </footer>
+    </body>
+</html>
